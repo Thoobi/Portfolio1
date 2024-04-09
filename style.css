@@ -191,10 +191,10 @@ header h1
 {
     border: 1px dashed #fafafa;
     height: 280px;
-    width: 250px;
+    width: 240px;
     margin-top: 20px;
     margin-bottom: 5px;
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 
@@ -202,7 +202,7 @@ header h1
 {
     font-family: 'Arenta';
     font-size: 11px;
-    margin-left: 20%;
+    margin-left: 25%;
     margin-bottom: 30px;
     color: #808080;
 }
@@ -218,7 +218,7 @@ header h1
     .remmy{
         margin-left: 40%;
         width: 400px;
-        height: 400px;
+        height: 450px;
         margin-top: 120px;
        
     }
@@ -319,6 +319,8 @@ header h1
     /* background-color: #fafafa; */
     border: 1px solid #fafafa;
     color: #fafafa;
+    display: flex;
+    flex-direction: column;
 }
 
 .project1 h3 
@@ -332,9 +334,10 @@ header h1
 
 .img1 
 {
-    margin-left: 20px;
-    margin-top: 10px;
     border: 1px solid #fafafa;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
 }
 
 
@@ -345,6 +348,9 @@ header h1
     /* background-color: #fafafa; */
     border: 1px solid #fafafa;
     color: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .project2 h3 
@@ -360,6 +366,7 @@ header h1
 {
     border: 1px solid #fafafa;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -370,6 +377,8 @@ header h1
     /* background-color: #fafafa; */
     border: 1px solid #fafafa;
     color: #0a0a0a;
+    display: flex;
+    flex-direction: column;
 }
 
 .project3 h3 
@@ -383,8 +392,6 @@ header h1
 
 .img3 
 {
-
-    margin-top: 10px;
     border: 1px solid #fafafa;
     display: flex;
     align-items: center;
