@@ -190,7 +190,7 @@ header h1
 .remmy
 {
     border: 1px dashed #fafafa;
-    height: 250px;
+    height: 280px;
     width: 250px;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -552,7 +552,7 @@ label
 
 input[type="text"]
 {
-    width: 60%;
+    width: 75%;
     height: 50px;
     border-radius: 15px;
     border: 1px solid white;
@@ -564,7 +564,7 @@ input[type="text"]
 }
 input[type="email"]
 {
-    width: 60%;
+    width: 75%;
     height: 50px;
     border-radius: 15px;
     border: 1px solid white;
@@ -576,7 +576,7 @@ input[type="email"]
 }
 textarea[id="message"]
 {
-    width: 60%;
+    width: 75%;
     height: 120px;
     border-radius: 10px;
     margin-bottom: 0px;
@@ -586,7 +586,7 @@ textarea[id="message"]
 
 button[type=submit]
 {
-    padding: 10px 30px;
+    padding: 10px 50px;
     background-color: rgb(8, 143, 8);
     border: none;
     color: #fafafa;
