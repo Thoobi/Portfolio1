@@ -1,0 +1,675 @@
+
+@font-face {
+    font-family: Luxerie;
+    src: url(Luxerie.otf);
+}
+@font-face {
+    font-family: Mulish;
+    src: url(Mulish.ttf);
+}
+@font-face {
+    font-family: 'RABONA Regular';
+    font-style: normal;
+    font-weight: 100;
+    src: local('RABONA Regular'), url('RABONA.woff') format('woff');
+}
+@font-face {
+    font-family: 'barno';
+    src: url(Barno.ttf);
+}
+@font-face {
+    font-family: 'arenta';
+    src: url(Arenta.otf);
+}
+
+
+    /* font-family: 'RABONA Regular';
+    font-family: "Lulo Clean W01 One";
+    font-family: Luxerie; 
+    font-family: 'Arenta'; */
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #0a0a0a;
+    color: #fafafa; 
+}
+
+/* header
+{
+    height: 60px;
+    width: 100%;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid rgba(49, 49, 49, 0.6);
+    position: static;
+} */
+
+nav
+{
+    height: 60px;
+    width: 100%;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid rgba(49, 49, 49, 0.6);
+    position: fixed;
+    z-index: 999s;
+    margin-bottom: 50px;
+}
+
+.mobile
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+}
+
+header h1
+{
+    font-family: 'Arenta';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Desktop
+{
+    display: none;
+}
+
+@media only screen and (min-width: 800px) {
+    
+    .mobile
+    {
+        display: none;
+    }
+
+    .navbar
+    {
+        display: none;
+    }
+
+    nav
+    {
+        position: fixed;
+        z-index: 999;  
+     }
+
+    .Desktop
+    {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    header h1
+    {
+        margin-left: 5px;
+    }
+
+    .u-list
+    {
+        list-style-type: none;
+        display: flex;
+        padding: 18px;
+        gap: 20px;
+    }
+    
+    .u-list li a 
+    {
+        text-decoration: none;
+        color: #fafafa;
+        font-family:'Arenta' ;
+        font-size: 14px;
+    }
+    
+    .u-list li a:hover
+    {
+        color: rgb(16, 185, 129);
+    }
+    
+}
+
+.btn
+{
+    font-family: 'Arenta';
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 21px;
+    margin-top: 20px;
+}
+.btn:hover
+{
+    color: rgb(16, 185, 129);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropcontent {
+    display: none;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 3px;
+    min-width: 160px;
+}
+.dropcontent a:hover
+{
+    color: rgb(16, 185, 129);
+}
+
+.dropcontent a {
+    color: #fafafa;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Arenta';
+    font-size: 12px;
+}
+  
+.dropdown:hover .dropcontent {
+    display: block;
+    /* border: 1px solid #fafafa; */
+}
+
+@media only screen and (min-width: 800px) {
+    .dropdown
+    {
+        display: none;
+    }
+}
+
+.remmy
+{
+    border: 1px dashed #fafafa;
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 20%;
+}
+
+
+.location
+{
+    font-family: 'Arenta';
+    font-size: 11px;
+    margin-left: 20%;
+    margin-bottom: 30px;
+    color: #808080;
+}
+
+.dropdown
+{
+    margin-top: 50px;
+}
+
+
+@media only screen and (min-width: 800px)
+{
+    .remmy{
+        margin-left: 40%;
+        width: 400px;
+        height: 400px;
+        margin-top: 120px;
+       
+    }
+    .location{
+        margin-left: 40%;
+        margin-bottom: 50px;
+    }
+}
+
+#about h2
+{
+    /* border-top: 1px solid rgba(179, 178, 178, 0.651); */
+    /* border-bottom: 1px solid rgba(179, 178, 178, 0.651); */
+    padding: 10px;
+    font-family: 'Arenta';
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 800px)
+{
+    #about h2
+    {
+        /* border-top: 1px solid rgba(179, 178, 178, 0.651); */
+        padding: 20px;
+        margin-bottom: 20px;
+        font-family: 'Arenta';
+        font-size: 70px;
+        text-align: center;
+    }
+}
+
+.shalaye 
+{
+    font-family: 'Arenta';
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#about
+{
+    border-bottom: 1px solid rgba(179, 178, 178, 0.651);
+}
+
+@media only screen and (min-width: 800px)
+{
+    .shalaye 
+    {
+        font-family: 'Arenta';
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    #about
+    {
+        border-bottom: 1px solid rgba(179, 178, 178, 0.651);
+    }
+}
+
+#projects
+{
+    padding-bottom: 20px;
+    width: 100%;
+    height: 1040px;
+    border-bottom: 1px solid rgba(179, 178, 178, 0.651);;
+}
+#projects h2
+{
+    font-family: 'Arenta';
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.pro-con
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+
+}
+.project1
+{
+    height: 300px;
+    width: 300px;
+    /* background-color: #fafafa; */
+    border: 1px solid #fafafa;
+    color: #fafafa;
+}
+
+.project1 h3 
+{
+    text-align: center;
+    font-family: 'Arenta';
+    font-size: 12px;
+    padding: 10px;
+    color: #fafafa;
+}
+
+.img1 
+{
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 1px solid #fafafa;
+}
+
+
+.project2
+{
+    height: 300px;
+    width: 300px;
+    /* background-color: #fafafa; */
+    border: 1px solid #fafafa;
+    color: #0a0a0a;
+}
+
+.project2 h3 
+{
+    text-align: center;
+    font-family: 'Arenta';
+    font-size: 12px;
+    padding: 10px;
+    color: #fafafa;
+}
+
+.img2 
+{
+    border: 1px solid #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+.project3
+{
+    height: 300px;
+    width: 300px;
+    /* background-color: #fafafa; */
+    border: 1px solid #fafafa;
+    color: #0a0a0a;
+}
+
+.project3 h3 
+{
+    text-align: center;
+    font-family: 'Arenta';
+    font-size: 12px;
+    padding: 10px;
+    color: #fafafa;
+}
+
+.img3 
+{
+
+    margin-top: 10px;
+    border: 1px solid #fafafa;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media only screen and (min-width: 800px)
+{
+    #projects
+    {
+        padding-bottom: 20px;
+        width: 100%;
+        height: 530px;
+    }
+    #projects h2
+    {
+        font-family: 'Arenta';
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .project1
+    {
+        height: 350px;
+        width: 350px;
+        background-color: #0a0a0a;
+        border: 2px solid #fafafa;
+        color: #fafafa;
+    }
+
+    .project1:hover
+    {
+        transform: translate(5px, 0.05px);
+        transition: width 1s ease-in-out 1s;
+        cursor: pointer;
+    }
+
+   .project1 h3 
+    {
+        text-align: center;
+        font-family: 'Arenta';
+        font-size: 16px;
+        padding: 10px;
+    }
+    #img1 
+    {
+        display: flex;
+        justify-content: center;
+        border: 1px solid #fafafa;
+    }
+
+    .project2
+    {
+        height: 400px;
+        width: 350px;
+        background-color: #0a0a0a;
+        border: 2px solid #fafafa;
+        color: #fafafa;
+    }
+
+    .project2 h3 
+    {
+        text-align: center;
+        font-family: 'Arenta';
+        font-size: 16px;
+        padding: 10px;
+    }
+    .img2 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        border: 1px solid #fafafa;
+        
+    }
+
+    .project2:hover
+    {
+        transform: translate(5px, 0.05px);
+        transition: width 1s ease-in-out 1s;
+        cursor: pointer;
+    }
+
+    .project3
+    {
+        height: 350px;
+        width: 350px;
+        background-color: #0a0a0a;
+        border: 2px solid #fafafa;
+        color: #fafafa;
+    }
+    .project3 h3 
+    {
+        text-align: center;
+        font-family: 'Arenta';
+        font-size: 16px;
+        padding: 10px;
+    }
+    .img3 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        border: 1px solid #fafafa;
+    
+    }
+
+    .project3:hover
+    {
+        transform: translate(5px, 0.05px);
+        transition: width 1s ease-in-out 1s;
+        cursor: pointer;
+    }
+
+    .pro-con
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+        gap: 10px;
+
+    }
+}
+
+#contact
+{
+    width: 100%;
+    height: 550px;
+    border-bottom: 1px solid grey;
+}
+
+#contact h2
+{
+    font-family: 'Arenta';
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+label
+{
+    font-family: 'Arenta';
+    font-size: 14px;
+}
+
+input[type="text"]
+{
+    width: 60%;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background: none;
+    color: #fafafa;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-family: 'Arenta';
+}
+input[type="email"]
+{
+    width: 60%;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background: none;
+    color: #fafafa;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-family: 'Arenta';
+}
+textarea[id="message"]
+{
+    width: 60%;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    padding: 15px;
+    font-family: 'Arenta';
+}
+
+button[type=submit]
+{
+    padding: 10px 30px;
+    background-color: rgb(8, 143, 8);
+    border: none;
+    color: #fafafa;
+    border-radius: 10px;
+    font-family: 'Arenta';
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 800px)
+{
+    #contact h2
+    {
+        font-family: 'Arenta';
+        font-size:  30px;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+        
+    }
+    input[type="text"]
+    {
+        width: 40%;
+        height: 50px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background: none;
+        color: #fafafa;
+        margin-bottom: 10px;
+        padding: 20px;
+        font-family: 'Arenta';
+    }
+    input[type="email"]
+    {
+        width: 40%;
+        height: 50px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background: none;
+        color: #fafafa;
+        margin-bottom: 10px;
+        padding: 20px;
+        font-family: 'Arenta';
+    }
+    textarea[id="message"]
+    {
+        width: 40%;
+        height: 120px;
+        border-radius: 10px;
+        margin-bottom: 0px;
+        padding: 15px;
+        font-family: 'Arenta';
+    }
+
+    button[type=submit]
+    {
+        margin-top: 20px;
+        padding: 10px 30px;
+        background-color: rgb(8, 143, 8);
+        border: none;
+        color: #fafafa;
+        border-radius: 10px;
+        font-family: 'Arenta';
+        font-size: 12px;
+    }
+    button[type=submit]:hover
+    {
+        background-color: rgb(5, 102, 5);
+        transform: translate(1px, 0.05px);
+        transition: height 2s ease-in 2s ;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer p
+{
+    text-align: center;
+    font-family: 'Arenta';
+    font-size: 10px;
+    margin: 10px;
+}
